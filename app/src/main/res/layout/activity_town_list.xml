@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/forumColor"
+    android:padding="30sp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titre_town"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:text="@string/Title_choose_town"
+                android:textColor="@color/colorTitle"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_town_l"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:text="@string/Tv_choose_town" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_list_town_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/but_valider_l"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Btn_oki" />
+
+                <Button
+                    android:id="@+id/but_ret_l"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/b_back" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

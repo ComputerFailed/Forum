@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/forumColor"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_pseudo_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cold"
+                android:hint="@string/et_pseudo_" />
+
+            <EditText
+                android:id="@+id/et_mdp_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cold"
+
+                android:hint="@string/et_mdp_" />
+            <EditText
+                android:id="@+id/et_mdp_2_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cold"
+                android:hint="@string/et_mdp_2" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_gender_man_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/et_genre_man"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_gender_woman_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/et_genre_woman" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_town_r"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:text="@string/Tv_choose_town" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/but_ville_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Tv_choose_town" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_register_r"
+                    android:layout_width="221dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/b_inscritpion" />
+
+                <Button
+                    android:id="@+id/btn_back_r"
+                    android:layout_width="221dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/b_back" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

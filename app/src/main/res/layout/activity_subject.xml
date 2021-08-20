@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/forumColor"
+    tools:context=".SubjectActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:id="@+id/ly_subject"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/li_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/et_MsgSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cold"
+        android:textColorHint="@color/cold"
+        android:hint="@string/msg"/>
+
+    <Button
+        android:id="@+id/btn_add_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/Btn_add_mss"
+        android:textColor="@color/black"
+        android:textColorHint="@color/beige"
+        app:iconTint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btn_bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="left"
+        android:text="@string/b_back" />
+
+</LinearLayout>
